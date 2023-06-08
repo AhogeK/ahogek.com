@@ -1,10 +1,10 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import {SITE_TITLE} from '../../config.ts'
-import {BsFillChatRightHeartFill} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import { SITE_TITLE } from '../../config.ts'
+import { BsFillChatRightHeartFill } from 'react-icons/bs'
 import './Header.css'
-import HeaderLink from "../HeaderLink/HeaderLink.tsx";
-import {IoHome} from 'react-icons/io5/index.js'
+import HeaderLink from '../HeaderLink/HeaderLink.tsx'
+import { IoHome } from 'react-icons/io5/index.js'
 
 const Header: React.FC = () => {
   return (
@@ -15,13 +15,13 @@ const Header: React.FC = () => {
             <h2
               className='font-semibold tracking-tighter p-2 font-mplus text-lg flex items-center title-h2'
             >
-              <BsFillChatRightHeartFill className='icon-shake'/>
-              <span className='mr-1'/>
+              <BsFillChatRightHeartFill className='icon-shake' />
+              <span className='mr-1' />
               {SITE_TITLE}
             </h2>
           </Link>
-          <div className="items-center gap-6 hidden md:flex">
-            <HeaderLink to="/"><IoHome/> 首页</HeaderLink>
+          <div className='items-center gap-6 hidden md:flex'>
+            <HeaderLink to='/'><IoHome /> 首页</HeaderLink>
           </div>
         </nav>
       </div>

@@ -1,5 +1,5 @@
-import React from "react"
-import {Link, useLocation} from "react-router-dom"
+import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import classNames from 'classnames'
 import './HeaderLink.css'
 
@@ -11,13 +11,14 @@ interface HeaderLinkProps {
 }
 
 const HeaderLink: React.FC<HeaderLinkProps> = ({
-                                                 to, children, target,
-                                                 className
+                                                 to, children,
+                                                 target, className
                                                }) => {
-  const location = useLocation();
-  const isActive = to === location.pathname || to === location.pathname.replace(/\/$/, '');
+  const location = useLocation()
+  const isActive = to === location.pathname ||
+    to === location.pathname.replace(/\/$/, '')
 
-  const classList = classNames(className, {active: isActive});
+  const classList = classNames(className, { active: isActive })
 
   return (
     <Link to={to} target={target} className={classList}>
@@ -26,4 +27,4 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({
   )
 }
 
-export default HeaderLink;
+export default HeaderLink
