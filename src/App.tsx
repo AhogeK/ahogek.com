@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
-import Header from './components/Header/Header.tsx'
-import Body from './components/Body/Body.tsx'
+import { Body, Header } from './components'
 
 const App: React.FC = () => {
   return (

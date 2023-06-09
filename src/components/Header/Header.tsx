@@ -4,7 +4,7 @@ import { SITE_TITLE } from '../../config.ts'
 import { BsFillChatRightHeartFill } from 'react-icons/bs'
 import './Header.css'
 import HeaderLink from '../HeaderLink/HeaderLink.tsx'
-import { IoHome } from 'react-icons/io5/index.js'
+import { IoBook, IoHome } from 'react-icons/io5/index.js'
 
 const Header: React.FC = () => {
   return (
@@ -22,6 +22,7 @@ const Header: React.FC = () => {
           </Link>
           <div className='items-center gap-6 hidden md:flex'>
             <HeaderLink to='/'><IoHome /> 首页</HeaderLink>
+            <HeaderLink to='/blog'><IoBook /> 文章</HeaderLink>
           </div>
         </nav>
       </div>
