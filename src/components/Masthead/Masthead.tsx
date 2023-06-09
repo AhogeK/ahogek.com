@@ -7,6 +7,7 @@ const Masthead: React.FC = () => {
     const video = document
       .getElementById('video') as HTMLVideoElement
     if (video) {
+      video.volume = 0.5
       if (Hls.isSupported()) {
 
         const hls = new Hls()
@@ -42,7 +43,6 @@ const Masthead: React.FC = () => {
             object-cover -translate-x-1/2 -translate-y-1/2 opacity-30'
             autoPlay
             loop
-            muted
             playsInline
             preload='auto'
           />
