@@ -18,7 +18,8 @@ const HeaderLink: React.FC<HeaderLinkProps> = ({
   const isActive = to === location.pathname ||
     to === location.pathname.replace(/\/$/, '')
 
-  const classList = classNames(className, { active: isActive })
+  const classList = classNames(className, 'header-link',
+    { active: isActive })
 
   return (
     <Link to={to} target={target} className={classList}>

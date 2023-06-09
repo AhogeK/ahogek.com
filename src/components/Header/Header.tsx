@@ -13,14 +13,15 @@ const Header: React.FC = () => {
         <nav className='flex items-center gap-3 text-base'>
           <Link to='/'>
             <h2
-              className='font-semibold tracking-tighter p-2 font-mplus text-lg flex items-center title-h2'
+              className='font-semibold tracking-tighter p-2 font-mplus text-lg
+                flex items-center title-h2'
             >
               <BsFillChatRightHeartFill className='icon-shake' />
               <span className='mr-1' />
               {SITE_TITLE}
             </h2>
           </Link>
-          <div className='items-center gap-6 hidden md:flex'>
+          <div className='items-center gap-6 hidden md:flex leading-10'>
             <HeaderLink to='/'><IoHome /> 首页</HeaderLink>
             <HeaderLink to='/blog'><IoBook /> 文章</HeaderLink>
             <HeaderLink to='/about'><IoPersonCircleSharp /> 关于我</HeaderLink>

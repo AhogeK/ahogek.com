@@ -9,3 +9,7 @@ a.active {
   font-weight: bolder;
   text-decoration: underline;
 }
+
+.header-link:hover {
+  box-shadow: 0 2px 0 0 rgb(249 115 22);
+}
