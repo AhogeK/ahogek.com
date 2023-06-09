@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { SITE_TITLE } from '../../config.ts'
 import { BsFillChatRightHeartFill } from 'react-icons/bs'
+import { IoBook, IoHome, IoLogoGithub, IoLogoTwitter, IoPersonCircleSharp } from 'react-icons/io5/index.js'
+import { HeaderLink } from '../HeaderLink'
 import './Header.css'
-import HeaderLink from '../HeaderLink/HeaderLink.tsx'
-import { IoBook, IoHome } from 'react-icons/io5/index.js'
 
 const Header: React.FC = () => {
   return (
@@ -23,6 +23,13 @@ const Header: React.FC = () => {
           <div className='items-center gap-6 hidden md:flex'>
             <HeaderLink to='/'><IoHome /> 首页</HeaderLink>
             <HeaderLink to='/blog'><IoBook /> 文章</HeaderLink>
+            <HeaderLink to='/about'><IoPersonCircleSharp /> 关于我</HeaderLink>
+            <HeaderLink to='https://twitter.com/AhogeKnight' target='_blank'>
+              <IoLogoTwitter /> Twitter
+            </HeaderLink>
+            <HeaderLink to='https://github.com/AhogeK' target='_blank'>
+              <IoLogoGithub /> Github
+            </HeaderLink>
           </div>
         </nav>
       </div>
