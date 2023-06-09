@@ -11,5 +11,5 @@ a.active {
 }
 
 .header-link:hover {
-  box-shadow: 0 2px 0 0 rgb(249 115 22);
+  border-bottom: 2px solid rgb(249 115 22);
 }
